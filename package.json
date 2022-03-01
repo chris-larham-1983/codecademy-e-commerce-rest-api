@@ -3,18 +3,29 @@
   "version": "1.0.0",
   "description": "An e-commerce REST API that allows customers to purchase martian photos",
   "main": "index.js",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.0"
+  },
   "scripts": {
-    "test": "mocha"
+    "start": "node index.js",
+    "heroku-postbuild": "cd views && npm install && npm run build"
+  },
+  "scriptsComments": {
+    "heroku-postbuild": "may or may not be correct as this very basic example is using handlebars rather than react"
   },
   "author": "Chris Larham",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "morgan": "^1.10.0",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "pg": "^8.7.3"
-  }
+  },
+  "proxy": "http://localhost:4001"
 }

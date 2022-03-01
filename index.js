@@ -1,9 +1,12 @@
+require('dotenv').config({ path: './db/.env'});
+
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const db = require('./db/index.js');
 const engine = require('express-handlebars'); //use the 'express-handlebars' package to render views
+const path = require('path');
 
 const productsRouter = require('./routes/products');
 const customersRouter = require('./routes/customers');
@@ -32,6 +35,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Logging Middleware
 if (!process.env.IS_TEST_ENV) {
     app.use(morgan('dev'));
+}
+
+// Serve static content in the production environment
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, "views")));
 }
 
 //render the homepage view when the app is loaded
@@ -95,6 +103,11 @@ app.use((err, req, res, next) => {
     else {
         res.status(500).send(err.message);
     }
+});
+
+// 'catchall' method if the user navigates to a route that is not defined above - the user gets redirected to the last valid route in the entered URL
+app.get('*', (req, res) => {
+    res.redirect('../');
 });
 
 //start the server listening on the appropriate port

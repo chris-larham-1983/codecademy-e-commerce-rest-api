@@ -9,18 +9,12 @@ const devConfig = {
 };
 
 const proConfig = {
-    connectionString: process.env.DATABASE_URL + '?SSL mode=Prefer;Trust Server Certificate = true;'
+    connectionString: process.env.DATABASE_URL + '?sslmode=require'
 }
 
 const pool = new Pool(process.env.NODE_ENV === "production"? proConfig: devConfig);
 
-const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'Codecademy e-commerce REST API',
-    password: 'postgres',
-    port: 5432,
-});
+const client = new Client(process.env.NODE_ENV === "production"? proConfig: devConfig);
 
 module.exports = {
     query: (text, params, callback) => {

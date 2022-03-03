@@ -73,35 +73,48 @@ app.use('/api/addresses', addressesRouter);
 
 // error handling:
 app.use((err, req, res, next) => {
-    if(err.message === `Customer does not exist in the database.`) {
-        res.status(404).send(err.message);
-    } else if(err.message === 'No address is associated with this customer id.') {
-        res.status(404).send(err.message);
-    } else if(err.message === 'This address is not associated with this customer id.') {
-        res.status(404).send(err.message);
-    } else if(err.message === 'No orders belonging to the specified customer were found in the database.') {
-        res.status(404).send(err.message);
-    } else if(err.message === 'No association of the specified customer ID and order ID exists in the database.') {
-        res.status(404).send(err.message);
-    } else if(err.message === 'No product with the specified ID found in the database.') {
-        res.status(404).send(err.message);
-    } else if (err.message === 'duplicate key value violates unique constraint "customers_username_key"') { //if a non-unique username has been selected by the customer
-        res.status(500).send('The username you have selected is already in use. Please choose a different username.'); //send an informative message back to the customser
-    } else if (err.message === 'duplicate key value violates unique constraint "customers_password_key"') {//if a non-unique password has been selected by the customer
-        res.status(500).send('The password you have selected is already in use. Please choose a different password.'); //send an informative message back to the customer
-    } else if(err.message === 'duplicate key value violates unique constraint "customers_email_unique"') { //if a non-unique email address has been selected by the customer
-        res.status(500).send('The email address you have selected is already in use. Please choose a different email address.'); //send an informative message back to the customer
-    } else if(err.message === 'duplicate key value violates unique constraint "products_image_url_key"') { //if an attempt to insert a non-unique image URL into the 'products' table has been made
-        res.status(409).send('Product creation did not succeed because the image URL is already in use.'); //send a message stating that the image URL is already in use
-    } else if(err.message === 'Your shopping cart is empty.') {
-        res.status(404).send(err.message);
-    } else if(err.message === 'insert or update on table "cart" violates foreign key constraint "cart_customer_id_fkey"') {
-        res.status(400).send('There is no record of a customer with the specified \'customerId\' in the database.');
-    } else if(err.message === 'null value in column "product_name" of relation "cart" violates not-null constraint') {
-        res.status(404).send('There is no record of a product with the specified \'productId\' in the database.');
-    }
-    else {
-        res.status(500).send(err.message);
+    switch(err.message) {
+        case 'Customer does not exist in the database.':
+            res.status(404).send(err.message);
+            break;
+        case 'No address is associated with this customer id.':
+            res.status(404).send(err.message);
+            break;
+        case 'This address is not associated with this customer id.':
+            res.status(404).send(err.message);
+            break;
+        case 'No orders belonging to the specified customer were found in the database.':
+            res.status(404).send(err.message);
+            break;
+        case 'No association of the specified customer ID and order ID exists in the database.':
+            res.status(404).send(err.message);
+            break;
+        case 'No product with the specified ID found in the database.':
+            res.status(404).send(err.message);
+            break;
+        case 'duplicate key value violates unique constraint "customers_username_key"':
+            res.status(500).send('The username you have selected is already in use. Please choose a different username.');
+            break;
+        case 'duplicate key value violates unique constraint "customers_password_key"':
+            res.status(500).send('The password you have selected is already in use. Please choose a different password.');
+            break;
+        case 'duplicate key value violates unique constraint "customers_email_unique"':
+            res.status(500).send('The email address you have selected is already in use. Please choose a different email address.');
+            break;
+        case 'duplicate key value violates unique constraint "products_image_url_key"':
+            res.status(409).send('Product creation did not succeed because the image URL is already in use.');
+            break;
+        case 'Your shopping cart is empty.':
+            res.status(404).send(err.message);
+            break;
+        case 'insert or update on table "cart" violates foreign key constraint "cart_customer_id_fkey"':
+            res.status(400).send('There is no record of a customer with the specified \'customerId\' in the database.');
+            break;
+        case 'null value in column "product_name" of relation "cart" violates not-null constraint':
+            res.status(404).send('There is no record of a product with the specified \'productId\' in the database.');
+            break;
+        default:
+            res.status(500).send(err.message);
     }
 });
 

@@ -2,6 +2,8 @@ require('dotenv').config({ path: './db/.env'});
 
 const express = require('express');
 const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json'); /* ... */
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const db = require('./db/index.js');
@@ -16,6 +18,8 @@ const loginFailureRouter = require('./routes/loginFailure');
 const cartRouter = require('./routes/cart');
 const ordersRouter = require('./routes/orders');
 const addressesRouter = require('./routes/addresses');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 //configure the Handlebars view engine
 app.engine('handlebars', engine.engine());

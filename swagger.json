@@ -2,17 +2,17 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Codecademy e-Commerce REST API",
-    "description": "Defines the backend logic relating to the 'registration', 'customers', 'addresses', 'orders', 'products', 'cart', and 'login' endpoints of an e-commerce REST API.",
+    "description": "Defines the backend logic relating to the <strong>'registration'</strong>, <strong>'customers'</strong>, <strong>'addresses'</strong>, <strong>'orders'</strong>, <strong>'products'</strong>, <strong>'cart'</strong>, and <strong>'login'</strong> endpoints of an e-commerce REST API.  <code>GET</code> operations can be performed directly on the <strong>HEROKU</strong> database; <code>POST</code>/<code>PUT</code>/<code>DELETE</code> operations can be performed on the <strong>SWAGGER HUB</strong> <em>virtual mocking server</em> so that the <strong>HEROKU</strong> database is not compromised.",
     "version": "0.1"
   },
   "servers": [
     {
-      "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
-      "description": "SwaggerHub API Auto Mocking"
-    },
-    {
       "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
       "description": "Heroku App"
+    },
+    {
+      "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+      "description": "SwaggerHub API Auto Mocking"
     }
   ],
   "paths": {
@@ -63,13 +63,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -214,17 +216,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
-          },
-          {
             "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
             "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -286,7 +294,12 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -361,7 +374,8 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -411,13 +425,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -588,13 +604,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -668,13 +694,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -762,13 +798,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -879,13 +917,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -980,13 +1028,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1083,7 +1141,12 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -1144,13 +1207,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1212,7 +1277,12 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -1287,7 +1357,8 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -1337,13 +1408,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1431,7 +1504,12 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -1495,7 +1573,8 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
@@ -1581,13 +1660,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1650,13 +1731,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1718,13 +1801,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1750,13 +1835,23 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+            "description": "Heroku App"
+          },
+          {
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://codecademy-e-commerce-rest-api.herokuapp.com",
+          "description": "Heroku App"
+        },
+        {
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1803,13 +1898,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     },
@@ -1835,13 +1932,15 @@
         },
         "servers": [
           {
-            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+            "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+            "description": "SwaggerHub API Auto Mocking"
           }
         ]
       },
       "servers": [
         {
-          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1"
+          "url": "https://virtserver.swaggerhub.com/chris-larham-1983/e-Commerce_Registration_Customers_Addresses_Orders/0.1",
+          "description": "SwaggerHub API Auto Mocking"
         }
       ]
     }

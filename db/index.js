@@ -9,8 +9,9 @@ const devConfig = {
 };
 
 const proConfig = {
-    connectionString: process.env.DATABASE_URL + '?sslmode=require'
-}
+    connectionString: process.env.DATABASE_URL + '?sslmode=require',
+    ssl: { rejectUnauthorized: false }
+};
 
 const pool = new Pool(process.env.NODE_ENV === "production"? proConfig: devConfig);
 

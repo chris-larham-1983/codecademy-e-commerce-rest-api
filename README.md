@@ -36,6 +36,10 @@ I created 23 endpoints in order to fulfil the logical requirements of this proje
 at the URL defined in the *Using the API* section at the bottom of this README.md. The endpoints communicate with a Postgresql 
 database composed of five tables: **customers**, **addresses**, **products**, **cart**, and **orders**.
 
+When a user completes the registration process, a record is inserted into the *'customers'* and *'addresses'* tables. The user can 
+then log in, add products to their cart, and finally checkout. When the user completes the checkout process, their cart is cleared, 
+and their order is added to their order history. The user can then log out. 
+
 ***
 
 ## Entity Relationship Diagram
@@ -55,13 +59,12 @@ I wrote this **e-commerce application REST API** using the following technologie
 - *Node.js*
 - *Postgres*
 - *Git and GitHub*
-- *JavaScript*
 - *Command Line*
 - *Entity Relationship Diagram*
   
 ***
 
-## Using the Api
+## Using the API
 
 This e-commerce application REST API is documented and able to be tested at:
 

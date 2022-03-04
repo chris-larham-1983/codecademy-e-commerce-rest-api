@@ -2309,8 +2309,7 @@
             "type": "integer",
             "description": "The sum total of all items in this order"
           }
-        },
-        "example": null
+        }
       }
     }
   }
